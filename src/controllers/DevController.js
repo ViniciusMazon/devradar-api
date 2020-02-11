@@ -7,7 +7,6 @@ module.exports = {
   async index(req, res) {
 
     const devs = await Dev.find();
-
     return res.status(200).json(devs);
   },
 
@@ -45,6 +44,17 @@ module.exports = {
     }
 
     return res.status(201).json(dev);
-  }
+  },
 
+  async update(req, res) {
+
+    await Dev.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    return res.send();
+  },
+
+  async destroy(req, res) {
+
+    await Dev.findByIdAndRemove(req.params.id);
+    return res.send();
+  }
 }
