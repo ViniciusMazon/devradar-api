@@ -48,8 +48,16 @@ module.exports = {
 
   async update(req, res) {
 
-    await Dev.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    return res.send();
+    const { github_username, techs, latitude, longitude } = req.body;
+    const techsArray = parseStringAsArray(techs);
+    const location = {
+      type: 'Point',
+      coordinates: [latitude, longitude]
+    }
+    devUpdate = { github_username, techs:techsArray, location }
+
+    const response = await Dev.findByIdAndUpdate(req.params.id, devUpdate, { new: true });
+    return res.send(response);
   },
 
   async destroy(req, res) {
