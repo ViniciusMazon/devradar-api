@@ -17,7 +17,7 @@ module.exports = {
 
     if (!dev) {
 
-      const techsArray = parseStringAsArray(techs);
+      const techsArray = parseStringAsArray(techs.toLowerCase());
       const location = {
         type: 'Point',
         coordinates: [longitude, latitude]
@@ -49,7 +49,7 @@ module.exports = {
   async update(req, res) {
 
     const { github_username, techs, latitude, longitude } = req.body;
-    const techsArray = parseStringAsArray(techs);
+    const techsArray = parseStringAsArray(techs.toLowerCase());
     const location = {
       type: 'Point',
       coordinates: [latitude, longitude]
