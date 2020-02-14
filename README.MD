@@ -36,13 +36,13 @@ O objetivo é unir desenvolvedores geograficamente próximos, filtrando os resul
 2. Instale as dependências rodando `yarn install` ou `npm install`
 3. Crie um arquivo .env e configure as variáveis de ambiente seguindo o exemplo do arquivo .env.example
 4. Rode a API executando `yarn start` ou `npm start`, se for desenvolver utilize o `yarn dev` ou `npm dev`
-5. Para utilizar a interface Web siga o passo a passo do [DevRadar-Web](https://github.com/ViniciusMazon/DevRadar-Web)
-6. Para utilizar o App siga o passo a passo do [DevRadar-Mobile](https://github.com/ViniciusMazon/DevRadar-Mobile) 
+5. Para utilizar a interface Web siga o passo a passo do [DevRadar-Web](https://github.com/ViniciusMazon/devradar-web)
+6. Para utilizar o App siga o passo a passo do [DevRadar-Mobile](https://github.com/ViniciusMazon/devradar-mobile) 
 
 ### Todos repositórios 📦
-* [API](https://github.com/ViniciusMazon/DevRadar-API)
-* [Web](https://github.com/ViniciusMazon/DevRadar-Web)
-* [Mobile](https://github.com/ViniciusMazon/DevRadar-Mobile)
+* [API](https://github.com/ViniciusMazon/devradar-api)
+* [Web](https://github.com/ViniciusMazon/devradar-web)
+* [Mobile](https://github.com/ViniciusMazon/devradar-mobile)
 
 ### Licença 📄
 Esse projeto está sob a licença **MIT**.
