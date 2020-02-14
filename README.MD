@@ -12,7 +12,6 @@ O objetivo é unir desenvolvedores geograficamente próximos, filtrando os resul
 2. Você insere as tecnologias que possui interesse no App e todos os devs cadastrados que estejam a 10km de você e que possuem uma ou mais tecnologias que você procura aparecerão no mapa.
 3. Você pode clicar na foto do Dev e analisar o GitHub dele dentro do App. Ah, caso algum dev se cadastre enquanto você estiver utilizando o App, ele aparecerá no seu mapa sem que você precise atualizar a pesquisa.
 
-![Splash](url da img)
 
 ### Tecnologias utilizadas 💙
 * NodeJs - Express
@@ -22,6 +21,7 @@ O objetivo é unir desenvolvedores geograficamente próximos, filtrando os resul
 * Criação da rota e do método update no controller de devs
 * Criação da rota e do método destroy no controller de devs
 * Inserção de variáveis de ambiente
+* As tecnologias cadastradas são salvas em lower case
 
 ### Rotas 🗺️
 - `GET/devs` - Retorna todos os desenvolvedores cadastrados.
